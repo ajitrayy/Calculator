@@ -6,6 +6,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="util.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -55,6 +56,13 @@
     </div>
 
 <script src="script.js"></script>
+<script>
+    
+   if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+   }
+
+</script>
 
 </body>
 </html>
